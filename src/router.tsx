@@ -1,10 +1,20 @@
 import { RouteObject, createBrowserRouter } from 'react-router-dom';
-import Postara from './pages/Postara';
+import AdnetoGridTest from './pages/AdnetoGridTest';
+import AdnetoInfiniteScrollTest from './pages/AdnetoInfiniteScrollTest';
+import HomePage from './pages/Home';
 
 const routes: RouteObject[] = [
   {
-    path: '',
-    element: <Postara />,
+    path: '/',
+    element: <HomePage />,
+  },
+  {
+    path: '/grid',
+    element: <AdnetoGridTest />,
+  },
+  {
+    path: '/infinite-scroll',
+    element: <AdnetoInfiniteScrollTest />,
   },
 ];
 
