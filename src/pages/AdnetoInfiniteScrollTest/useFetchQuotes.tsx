@@ -30,6 +30,7 @@ const useFetchQuotes = () => {
 
   useEffect(() => {
     fetchMoreQuotes();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return { quotes, fetchMoreQuotes, hasError, isLoading };
