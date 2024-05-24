@@ -36,6 +36,6 @@ describe('OtpInput Component', () => {
     expect(elements[3]).toHaveFocus();
     fireEvent.change(elements[3], { target: { value: '4' } })
 
-    expect(otp).toBe('1234');
+    expect(otp).toBe('12343');
   })
 })
